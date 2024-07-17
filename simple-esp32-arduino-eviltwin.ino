@@ -132,7 +132,7 @@ void setup() {
   Serial.begin(115200);
   WiFi.mode(WIFI_AP_STA);
   WiFi.softAPConfig(IPAddress(192, 168, 4, 1) , IPAddress(192, 168, 4, 1) , IPAddress(255, 255, 255, 0));
-  WiFi.softAP("WIFI KU", "wif12345");
+  WiFi.softAP("WifiETwin", "etwin12345");
   dnsServer.start(53, "*", IPAddress(192, 168, 4, 1));
 
   webServer.on("/", handleIndex);
