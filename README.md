@@ -1,4 +1,4 @@
-# PhiSiFi
+# Simple ESP32 Arduino Eviltwin
 <p align="center">
 <a href="https://github.com/p3tr0s/PhiSiFi/"><img title="Tool" src="https://img.shields.io/badge/Tool-PhiSiFi-green"></a>
 <img title="Version" src="https://img.shields.io/badge/Version-1.0-green">
@@ -9,12 +9,12 @@
 
 <img src="https://user-images.githubusercontent.com/32341044/202444452-3e7c9ab0-1643-4996-8319-18b8c25544fa.jpg"></img><br>
 
-It uses an ESP8266 to attack a WiFi network using Deauther && || Evil-Twin AP method.
+It uses an ESP32 to attack a WiFi network using Deauther && || Evil-Twin AP method.
 
 ## FEATURES :
-* Deauthentication of a target WiFi access point
+* Deauthentication of a target WiFi access point `In development`
 * Evil-Twin AP to capture passwords with password verification against the og access point
-* It can do both attacks at the same time, no toggling of the deauther is required. 
+* It can do both attacks at the same time, no toggling of the deauther is required. `In development`
 
 ## DISCLAIMER
 The source code given in this public repo is for educational use only and should only be used against your own networks and devices!<br>
@@ -31,12 +31,12 @@ Please check the legal regulations in your country before using it.
 8. Click Upload button
 
 # How to use:
-- Connect to the AP named `WiPhi_34732` with password `d347h320` from your phone/PC.
+- Connect to the AP named `WifiETwin` with password `etwin12345` from your phone/PC.
 - Select the target AP you want to attack (list of available APs refreshes every 30secs - page reload is required).
 - Click the Start Deauthing button to start kicking devices off the selected network.
 - Click the Start Evil-Twin button and optionally reconnect to the newly created AP named same as your target (will be open).
 - You can stop any of the attacks by visiting `192.168.4.1/admin` while conected to Evil-Twin AP or by resetting the ESP8266.
-- Once a correct password is found, AP will be restarted with default ssid `WiPhi_34732` / `d347h320` and at the bottom of a table you should be able to see something like "Successfully got password for - `TARGET_SSID` - `PASSWORD`
+- Once a correct password is found, AP will be restarted with default ssid `WifiETwin` / `etwin12345` and at the bottom of a table you should be able to see something like "Successfully got password for - `TARGET_SSID` - `PASSWORD`
    - If you power down / hard reset the gathered info will be lost
  
 # It doesn't work for me:
